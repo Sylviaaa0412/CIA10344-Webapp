@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ProductTypeJDBCDAO implements ProductTypeDAO_interface {
 	String driver = "com.mysql.cj.jdbc.Driver";
-	String url = "jdbc:mysql://localhost:3306/test01?serverTimezone=Asia/Taipei";
+	String url = "jdbc:mysql://localhost:3306/hihidatabase?serverTimezone=Asia/Taipei";
 	String userid = "root";
 	String passwd = "mary3293244";
 	
