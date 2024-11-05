@@ -12,7 +12,7 @@
   
   <servlet>
     <servlet-name>ProductTypeServlet</servlet-name>
-    <servlet-class>com.productType.controller.ProductTypeServlet</servlet-class>
+    <servlet-class>com.producttype.controller.ProductTypeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ProductTypeServlet</servlet-name>

@@ -5,6 +5,7 @@ public class ProductTypeVO {
 	private Integer pdtTypeId;
 	private String pdtTypeName;
 	private String pdtTypeDesc;
+	
 	public Integer getPdtTypeId() {
 		return pdtTypeId;
 	}
