@@ -10,12 +10,19 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/hihidatabase</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
   <servlet>
     <servlet-name>ProductTypeServlet</servlet-name>
     <servlet-class>com.producttype.controller.ProductTypeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ProductTypeServlet</servlet-name>
-    <url-pattern>/productType/productType.do</url-pattern>
+    <url-pattern>/back-end/productType/productType.do</url-pattern>
   </servlet-mapping>
 </web-app>

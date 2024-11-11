@@ -144,14 +144,13 @@
 	</c:if>
 	
 	<ul>
-	<br>
-	<br>
+	
 	<li>
 		<form method="post" action="productType.do">
-		<label for="pdtTypeId_inp">輸入商品類別編號 (如:10) :
-		<input type="text" name="pdtTypeId" id="pdtTypeId_inp">
-		<input type="hidden" name="action" value="getOne_For_Display">
-		<input type="submit" value="查詢">
+			<label for="pdtTypeId_inp">輸入商品類別編號 (如:1) :
+			<input type="text" name="pdtTypeId" id="pdtTypeId_inp">
+			<input type="hidden" name="action" value="getOne_For_Display">
+			<input type="submit" value="查詢">
 		</form>
 	</li>
 	
@@ -173,10 +172,10 @@
 	<li>
 		<form method="post" action="productType.do">
 		<label for="pdtTypeName_sel">選擇商品類別名稱 :
-		<select size="1" name="productTypeId" id="pdtTypeName_sel">
-		 <c:forEach var="productTypeVO" items="${pdtTypeSvc.all}">
-		 	<option value="${productTypeVO.pdtTypeId}">${productTypeVO.pdtTypeName}
-		 </c:forEach>
+		<select size="1" name="pdtTypeId" id="pdtTypeName_sel">
+			 <c:forEach var="productTypeVO" items="${pdtTypeSvc.all}">
+			 	<option value="${productTypeVO.pdtTypeId}">${productTypeVO.pdtTypeName}
+			 </c:forEach>
 		</select>
 		<input type="hidden" name="action" value="getOne_For_Display">
 		<input type="submit" value="查詢">

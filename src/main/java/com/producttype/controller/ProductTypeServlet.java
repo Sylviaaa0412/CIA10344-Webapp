@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.product.model.ProductService;
+import com.product.model.PdtService;
 import com.producttype.model.ProductTypeService;
 import com.producttype.model.ProductTypeVO;
 
@@ -18,17 +18,8 @@ import com.producttype.model.ProductTypeVO;
  * Servlet implementation class productTypeServlet
  */
 
-public class productTypeServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public productTypeServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
+public class ProductTypeServlet extends HttpServlet {
+	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -119,7 +110,7 @@ public class productTypeServlet extends HttpServlet {
 		}
 		
 //		update
-		if("getOne_For_Update".equals(action)) {
+		if("update".equals(action)) {
 			
 			List<String> errorMsgs = new LinkedList<String>();
 			req.setAttribute("errorMsgs", errorMsgs);

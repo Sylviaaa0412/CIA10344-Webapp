@@ -112,14 +112,14 @@
                 <td>${productTypeVO.pdtTypeName}</td>
                 <td>${productTypeVO.pdtTypeDesc}</td>
                 <td>
-                    <form action="<%=request.getContextPath()%>/productType/productType.do" method="post">
+                    <form action="productType.do" method="post">
                         <input type="submit" value="編輯">
                         <input type="hidden" name="pdtTypeId" value="${productTypeVO.pdtTypeId}">
                         <input type="hidden" name="action" value="getOne_For_Update">
                     </form>
                 </td>
                 <td>
-                    <form action="<%=request.getContextPath()%>//productType/productType.do" method="post">
+                    <form action="productType.do" method="post" onsubmit="return confirmDelete();">
                         <input type="submit" value="刪除">
                         <input type="hidden" name="pdtTypeId" value="${productTypeVO.pdtTypeId}">
                         <input type="hidden" name="action" value="delete">
@@ -131,5 +131,10 @@
     <div class="button-container">
         <a href='select_page.jsp' class="button-link">查詢商品類別</a>
     </div>
+     <script type="text/javascript">
+        function confirmDelete() {
+            return confirm("是否確定刪除此商品類別？");
+        }
+    </script>
 </body>
 </html>
