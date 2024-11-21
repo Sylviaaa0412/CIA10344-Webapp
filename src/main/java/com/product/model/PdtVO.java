@@ -4,7 +4,7 @@ package com.product.model;
 //@Table(name = "Product")
 //@NamedQuery(name = "getAllPdt", query = "from Product where pdtId > :pdtId order by pdtId desc")
 
-public class ProductVO implements java.io.Serializable{
+public class PdtVO implements java.io.Serializable{
 	
 	private Integer pdtId;
 	private Integer pdtTypeId;
@@ -12,11 +12,11 @@ public class ProductVO implements java.io.Serializable{
 	private String pdtName;
 	private String pdtDesc;
 	private Integer pdtPrice;
-	public ProductVO() {
+	public PdtVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public ProductVO(Integer pdtId, Integer pdtTypeId, Integer pdtStat, String pdtName, String pdtDesc,
+	public PdtVO(Integer pdtId, Integer pdtTypeId, Integer pdtStat, String pdtName, String pdtDesc,
 			Integer pdtPrice) {
 		super();
 		this.pdtId = pdtId;

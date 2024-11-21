@@ -51,50 +51,50 @@
   <li><a href='listAllEmp.jsp'>List</a> all Emps.  <br><br></li>
   
   
-<!--   <li> -->
-<!--     <FORM METHOD="post" ACTION="emp.do" > -->
-<!--         <b>輸入員工編號 (如7001):</b> -->
-<!--         <input type="text" name="empno"> -->
-<!--         <input type="hidden" name="action" value="getOne_For_Display"> -->
-<!--         <input type="submit" value="送出"> -->
-<!--     </FORM> -->
-<!--   </li> -->
+  <li>
+    <FORM METHOD="post" ACTION="emp.do" >
+        <b>輸入員工編號 (如7001):</b>
+        <input type="text" name="empno">
+        <input type="hidden" name="action" value="getOne_For_Display">
+        <input type="submit" value="送出">
+    </FORM>
+  </li>
 
-<%--   <jsp:useBean id="empSvc" scope="page" class="com.emp.model.EmpService" /> --%>
+  <jsp:useBean id="empSvc" scope="page" class="com.emp.model.EmpService" />
    
-<!--   <li> -->
-<!--      <FORM METHOD="post" ACTION="emp.do" > -->
-<!--        <b>選擇員工編號:</b> -->
-<!--        <select size="1" name="empno"> -->
-<%--          <c:forEach var="empVO" items="${empSvc.all}" >  --%>
-<%--           <option value="${empVO.empno}">${empVO.empno} --%>
-<%--          </c:forEach>    --%>
-<!--        </select> -->
-<!--        <input type="hidden" name="action" value="getOne_For_Display"> -->
-<!--        <input type="submit" value="送出"> -->
-<!--     </FORM> -->
-<!--   </li> -->
+  <li>
+     <FORM METHOD="post" ACTION="emp.do" >
+       <b>選擇員工編號:</b>
+       <select size="1" name="empno">
+         <c:forEach var="empVO" items="${empSvc.all}" > 
+          <option value="${empVO.empno}">${empVO.empno}
+         </c:forEach>   
+       </select>
+       <input type="hidden" name="action" value="getOne_For_Display">
+       <input type="submit" value="送出">
+    </FORM>
+  </li>
   
-<!--   <li> -->
-<!--      <FORM METHOD="post" ACTION="emp.do" > -->
-<!--        <b>選擇員工姓名:</b> -->
-<!--        <select size="1" name="empno"> -->
-<%--          <c:forEach var="empVO" items="${empSvc.all}" >  --%>
-<%--           <option value="${empVO.empno}">${empVO.ename} --%>
-<%--          </c:forEach>    --%>
-<!--        </select> -->
-<!--        <input type="hidden" name="action" value="getOne_For_Display"> -->
-<!--        <input type="submit" value="送出"> -->
-<!--      </FORM> -->
-<!--   </li> -->
-<!-- </ul> -->
+  <li>
+     <FORM METHOD="post" ACTION="emp.do" >
+       <b>選擇員工姓名:</b>
+       <select size="1" name="empno">
+         <c:forEach var="empVO" items="${empSvc.all}" > 
+          <option value="${empVO.empno}">${empVO.ename}
+         </c:forEach>   
+       </select>
+       <input type="hidden" name="action" value="getOne_For_Display">
+       <input type="submit" value="送出">
+     </FORM>
+  </li>
+</ul>
 
 
-<!-- <h3>員工管理</h3> -->
+<h3>員工管理</h3>
 
-<!-- <ul> -->
-<!--   <li><a href='addEmp.jsp'>Add</a> a new Emp.</li> -->
-<!-- </ul> -->
+<ul>
+  <li><a href='addEmp.jsp'>Add</a> a new Emp.</li>
+</ul>
 
 </body>
 </html>
